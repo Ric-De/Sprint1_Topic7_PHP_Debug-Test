@@ -14,7 +14,11 @@ If the grade is less than 33%, the student will fail.*/
 
 //Class name was originally 'grade'. Because identity issues between the class name and the archive name I changed it.
 
-function sp1_t7_Lv1_Ex2($grade)
+//Create a new class with the name of the file to future test using phpunit inside the folder exercise2. 
+
+class GradeVerifier{
+
+public static function grade($grade)
 {
     if ($grade >= 60) {
         return "First Division";
@@ -26,9 +30,6 @@ function sp1_t7_Lv1_Ex2($grade)
         return "Fail";
     }
 }
-
-$grade = 40;
-
-echo sp1_t7_Lv1_Ex2($grade);
+}
 
 ?>
