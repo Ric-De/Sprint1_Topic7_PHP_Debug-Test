@@ -9,10 +9,22 @@
          failOnRisky="true"
          failOnWarning="true"
          colors="true">
+
+
     <testsuites>
-        <testsuite name="default">
-            <directory>tests</directory>
+
+		<!-- Exercise1 Testsuite -->
+
+        <testsuite name="Exercise1">
+            <directory>tests/Exercise1</directory>
         </testsuite>
+
+		<!-- Exercise2 Testsuite -->
+
+ 	<testsuite name="Exercise2">
+            <directory>tests/Exercise2</directory>
+        </testsuite>
+
     </testsuites>
 
     <source restrictDeprecations="true" restrictNotices="true" restrictWarnings="true">
